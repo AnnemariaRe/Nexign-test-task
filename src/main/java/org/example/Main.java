@@ -12,7 +12,6 @@ import java.util.Map;
 
 public class Main {
     private static final String CDR_FILE_NAME = "cdr.txt";
-    private static final String REPORTS_DIRECTORY_NAME = "reports";
 
     public static void main(String[] args) {
         List<CallDataRecord> cdrList = new ArrayList<>();

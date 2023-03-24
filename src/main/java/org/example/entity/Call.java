@@ -43,9 +43,10 @@ public class Call {
                 this.cost = new BigDecimal(Math.ceil(callDuration / 60 + 0.9) * 1.5);
                 break;
             case "11":
-                if (this.callType == "02") {
+                if (this.callType.equals("02")) {
                     this.cost = new BigDecimal(0);
-                } else if (this.callType == "01") {
+                }
+                if (this.callType.equals("01")) {
                     totalTime = timeSpent + callDuration;
                     extraTime = totalTime - (100 * 60);
 
