@@ -82,7 +82,7 @@ public class ReportGenerator {
         int totalCostValueLength = (totalCost + " rubles ").length();
         int totalCostLength = "Total Cost: |".length();
 
-        writer.write(String.format("|%" + (maxLineLength - totalCostLength - totalCostValueLength + 1)
+        writer.write(String.format("|%" + (maxLineLength - maxLastTwoColumnsLength - 4)
                         + "s |" + " ".repeat(maxLastTwoColumnsLength - totalCostValueLength) + "%s rubles |\n",
                         "Total Cost:", totalCost));
         writer.write("-".repeat(maxLineLength) + "\n");
